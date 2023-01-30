@@ -1,0 +1,70 @@
+.brands {
+    width: 800px;
+    height: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    border: 1px dotted red;
+    background-color: rgb(188, 243, 255);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.brands p {
+    font-size: 2.3em;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: red;
+    margin: 0;
+    padding: 1px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.brand {
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 1px solid rgb(89, 218, 247);
+    background-color: rgb(175, 240, 254);;
+    border-radius: 5px;
+}
+
+.brand a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.brand img {
+    width: 100px;
+    padding-left: 50px;
+    mix-blend-mode: multiply;
+}
+
+.brand p {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 980px) {
+    .brands {
+        width: 90vw;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

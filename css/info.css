@@ -1,0 +1,41 @@
+.section-info {
+    width: 800px;
+    height: fit-content;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: grid;
+    grid-template-rows: 1fr;
+    border: 1px dotted red;
+    background-color: rgb(188, 235, 246);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.section-info h4 {
+    font-size: 2.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    color: red;
+}
+
+.section-info p {
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 980px) {
+    .section-info {
+        width: 90vw;
+    }
+
+    .section-info h4 {
+        margin-bottom: 10px;
+    }
+}
