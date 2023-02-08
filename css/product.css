@@ -1,0 +1,143 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95vw;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.product-main-info {
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 45vw;
+    height: fit-content;
+    margin: auto;
+}
+
+.product-specific-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 45vw;
+    height: fit-content;
+    margin: auto;
+}
+
+.variant-price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.name {
+    font-size: 1.6em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    color: rgb(9, 9, 9);
+    text-shadow: rgb(9, 9, 9) 1px 0 1px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 80px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+#phone-name {
+    display: none;
+}
+
+#pc-name {
+    display: block;
+}
+
+.product-main-info img {
+    width: 35vw;
+    margin: auto;
+    mix-blend-mode: multiply;
+}
+
+.price {
+    text-align: start;
+    justify-self: start;
+    font-weight: 900;
+    font-size: 1.4em;
+    margin: 0;
+    margin: 8px;
+    align-self: center;
+    white-space: nowrap;
+}
+
+.variant {
+    text-align: end;
+    justify-self: end;
+    font-weight: 900;
+    font-size: 1.4em;
+    margin: 0;
+    margin: 8px;
+    align-self: center;
+    white-space: nowrap;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 1.4em;
+    margin: 0;
+    margin: 8px;
+    align-self: center;
+}
+
+.buy {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    align-self: center;
+    color: rgb(4, 211, 87);
+    text-shadow: rgb(4, 211, 87) 0.5px 0 0.5px;
+    font-size: 1.4em;
+    margin: auto;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1540px) {
+    .product-specific-info {
+        width: 40vw;
+    }
+
+    .product-main-info img {
+        width: 45vw;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .main {
+        width: 98vw;
+        grid-template-columns: 1fr;
+    }
+
+    .product-specific-info {
+        width: 80vw;
+    }
+
+    .product-main-info {
+        width: 95vw;
+    }
+
+    #phone-name {
+        display: block;
+    }
+
+    #pc-name {
+        display: none;
+    }
+    
+    .product-main-info img {
+        width: 85vw;
+    }
+
+    .name {
+        margin-bottom: 5px;
+    }
+}
